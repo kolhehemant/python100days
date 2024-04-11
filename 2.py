@@ -1,5 +1,9 @@
-26 32
+def outer_function(a, b):
+    def inner_function(c, d):
+        return c + d
 
-34 - 26
+    return inner_function(a, b)
 
-6 a = 6 
+
+result = outer_function(5, 10)
+print(result)
